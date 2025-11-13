@@ -1,0 +1,26 @@
+[
+  {
+    "id": "n3",
+    "titulo": "MercadoHoy: versión inicial online",
+    "texto": "Publicamos la primera versión del sitio con secciones Inicio, Cripto, Legales y Nosotros.",
+    "fuente": "MercadoHoy",
+    "url": "",
+    "fechaISO": "2025-11-05T09:00:00.000Z"
+  },
+  {
+    "id": "n2",
+    "titulo": "Maqueta de sección Cripto",
+    "texto": "Se añade una vista de ejemplo con tarjetas para BTC, ETH y DOGE.",
+    "fuente": "MercadoHoy",
+    "url": "",
+    "fechaISO": "2025-11-05T08:30:00.000Z"
+  },
+  {
+    "id": "n1",
+    "titulo": "Bienvenida",
+    "texto": "Este es un ejemplo de listado de noticias cargado desde un archivo JSON estático.",
+    "fuente": "MercadoHoy",
+    "url": "",
+    "fechaISO": "2025-11-05T08:00:00.000Z"
+  }
+]

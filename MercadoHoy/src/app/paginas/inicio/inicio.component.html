@@ -1,0 +1,66 @@
+<section class="py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="rounded-2xl p-8 bg-gray-50 border">
+      <h1 class="text-4xl font-bold text-blue-600">MercadoHoy</h1>
+      <p class="mt-2 text-gray-700">
+        Noticias y datos del mercado en una vista clara y rápida.
+      </p>
+
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <a
+          routerLink="/cripto"
+          class="block rounded-xl p-5 border hover:shadow"
+        >
+          <h3 class="font-semibold">Cripto</h3>
+          <p class="text-sm text-gray-600">Precios, cambios y tendencia.</p>
+        </a>
+        <a
+          routerLink="/nosotros"
+          class="block rounded-xl p-5 border hover:shadow"
+        >
+          <h3 class="font-semibold">Nosotros</h3>
+          <p class="text-sm text-gray-600">Sobre el proyecto.</p>
+        </a>
+        <a
+          routerLink="/legales"
+          class="block rounded-xl p-5 border hover:shadow"
+        >
+          <h3 class="font-semibold">Legales</h3>
+          <p class="text-sm text-gray-600">Términos y política.</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Lista de noticias desde JSON -->
+    <div class="mt-10">
+      <h2 class="text-2xl font-semibold mb-4">Últimas noticias</h2>
+
+      <div *ngIf="noticias$ | async as noticias; else vacio" class="grid gap-4">
+        <article
+          *ngFor="let n of noticias"
+          class="border rounded-xl p-5 bg-white"
+        >
+          <h3 class="text-lg font-semibold">{{ n.titulo }}</h3>
+          <p class="text-xs text-gray-500">
+            {{ n.fechaISO | date : "medium" }}
+            <span *ngIf="n.fuente">• {{ n.fuente }}</span>
+          </p>
+          <p class="mt-2 text-gray-700">{{ n.texto }}</p>
+          <a
+            *ngIf="n.url"
+            [href]="n.url"
+            target="_blank"
+            rel="noopener"
+            class="text-blue-600 hover:underline text-sm mt-2 inline-block"
+          >
+            Leer fuente →
+          </a>
+        </article>
+      </div>
+
+      <ng-template #vacio>
+        <p class="text-gray-500">No hay noticias todavía.</p>
+      </ng-template>
+    </div>
+  </div>
+</section>
