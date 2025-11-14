@@ -8,11 +8,6 @@ export const routes: Routes = [
       import('./paginas/inicio/inicio.component').then(m => m.InicioComponent),
   },
   {
-    path: 'cripto',
-    loadComponent: () =>
-      import('./paginas/cripto/cripto.component').then(m => m.CriptoComponent),
-  },
-  {
     path: 'legales',
     loadComponent: () =>
       import('./paginas/legales/legales.component').then(m => m.LegalesComponent),

@@ -1,18 +1,93 @@
-<section class="py-12">
-  <div class="max-w-4xl mx-auto px-4">
+<section class="min-h-screen bg-slate-50 text-slate-900 font-inter">
+  <div class="max-w-4xl mx-auto px-4 py-10 lg:py-12 space-y-8">
     <app-boton-inicio></app-boton-inicio>
 
-    <h1 class="text-4xl font-bold text-blue-600 mb-4">Sobre Nosotros</h1>
-    <p class="text-gray-700 leading-relaxed mb-6">
-      <strong>MercadoHoy</strong> es un portal informativo centrado en el
-      análisis y la divulgación de temas financieros, económicos y de inversión.
-      Nuestro objetivo es ofrecer una visión clara y accesible del
-      comportamiento de los mercados, con especial atención al sector de las
-      criptomonedas y las tendencias emergentes en el ámbito económico digital.
-    </p>
-    <p class="text-gray-700 leading-relaxed">
-      Nuestra misión es acercar la economía y las finanzas a todas las personas,
-      ofreciendo contenido actualizado, comprensible y visualmente atractivo.
-    </p>
+    <!-- CABECERA -->
+    <header class="space-y-2">
+      <p class="text-[0.75rem] font-medium uppercase tracking-[0.18em] text-amber-700">
+        Sobre la revista
+      </p>
+      <h1 class="text-3xl sm:text-4xl font-playfair tracking-tight text-slate-900">
+        Quién hay detrás de <span class="text-amber-700">MercadoHoy</span>
+      </h1>
+      <p class="text-sm sm:text-base text-slate-600 max-w-2xl">
+        <strong>MercadoHoy</strong> es una revista digital independiente centrada en
+        la economía, los mercados y el ecosistema cripto. Nuestro objetivo es
+        filtrar el ruido y quedarnos con la información que de verdad importa.
+      </p>
+    </header>
+
+    <!-- BLOQUE PRINCIPAL -->
+    <article
+      class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-7 shadow-sm space-y-5"
+    >
+      <section class="space-y-3">
+        <h2 class="text-lg font-playfair text-slate-900">
+          Nuestro enfoque
+        </h2>
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+          En <span class="font-medium">MercadoHoy</span> analizamos la actualidad
+          económica con una perspectiva práctica: qué está pasando, por qué es
+          relevante y cómo puede afectar a ahorradores e inversores particulares.
+        </p>
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+          Ponemos especial atención a los <span class="font-medium">mercados
+          tradicionales</span> (bolsa, renta fija, macroeconomía) y al
+          <span class="font-medium">universo cripto</span>, un sector en constante
+          cambio donde es fácil perderse entre titulares y promesas vacías.
+        </p>
+      </section>
+
+      <section class="grid sm:grid-cols-2 gap-4">
+        <div class="rounded-xl border border-slate-100 bg-slate-50/80 p-4">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">
+            Qué te vas a encontrar
+          </h3>
+          <ul class="text-sm text-slate-700 space-y-1.5">
+            <li>• Resúmenes claros de los movimientos del mercado.</li>
+            <li>• Lecturas sobre economía actual explicada sin tecnicismos vacíos.</li>
+            <li>• Seguimiento especial del sector cripto y sus riesgos.</li>
+          </ul>
+        </div>
+
+        <div class="rounded-xl border border-slate-100 bg-white p-4">
+          <h3 class="text-sm font-semibold text-slate-900 mb-1">
+            Cómo trabajamos
+          </h3>
+          <ul class="text-sm text-slate-700 space-y-1.5">
+            <li>• Seleccionamos fuentes contrastadas y evitamos el sensacionalismo.</li>
+            <li>• Priorizamos el contexto frente al ruido diario.</li>
+            <li>• Actualizamos contenidos a medida que el mercado cambia.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="space-y-3">
+        <h2 class="text-lg font-playfair text-slate-900">
+          Lo que <span class="text-amber-700">no</span> somos
+        </h2>
+        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+          MercadoHoy no es una plataforma de asesoramiento financiero
+          personalizado. El contenido que publicamos tiene carácter informativo
+          y divulgativo. No te diremos qué comprar o vender, sino qué está
+          pasando y qué factores deberías tener en cuenta antes de decidir.
+        </p>
+      </section>
+    </article>
+
+    <!-- BLOQUE FINAL -->
+    <section
+      class="rounded-2xl border border-amber-100 bg-amber-50/70 px-5 py-4 text-sm text-slate-800 flex flex-col sm:flex-row sm:items-center gap-3"
+    >
+      <div class="flex-1">
+        <p class="font-medium">
+          Una revista pensada para leer sin prisa, pero al ritmo del mercado.
+        </p>
+        <p class="text-slate-600 mt-1">
+          Nuestro compromiso es seguir mejorando la calidad de la información y
+          la experiencia de lectura, artículo a artículo.
+        </p>
+      </div>
+    </section>
   </div>
 </section>
