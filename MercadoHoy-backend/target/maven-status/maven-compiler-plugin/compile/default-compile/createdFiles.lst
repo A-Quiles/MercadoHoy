@@ -1,0 +1,12 @@
+com\mercadohoy\mercadohoybackend\crypto\dto\BinanceDtos$BinanceTicker24h.class
+com\mercadohoy\mercadohoybackend\news\dto\NewsDtos.class
+com\mercadohoy\mercadohoybackend\MercadohoyBackendApplication.class
+com\mercadohoy\mercadohoybackend\config\WebConfig.class
+com\mercadohoy\mercadohoybackend\crypto\dto\CryptoAsset.class
+com\mercadohoy\mercadohoybackend\news\controller\NewsController.class
+com\mercadohoy\mercadohoybackend\news\dto\NewsDtos$GenerateNewsRequest.class
+com\mercadohoy\mercadohoybackend\crypto\service\CryptoService.class
+com\mercadohoy\mercadohoybackend\news\dto\NewsDtos$GenerateNewsResponse.class
+com\mercadohoy\mercadohoybackend\news\service\NewsService.class
+com\mercadohoy\mercadohoybackend\crypto\controller\CryptoController.class
+com\mercadohoy\mercadohoybackend\crypto\dto\BinanceDtos.class

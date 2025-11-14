@@ -1,0 +1,10 @@
+/* Estilos adicionales específicos del componente */
+:host {
+  display: block;
+}
+
+/* Opcional: efecto hover en tabla */
+tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}

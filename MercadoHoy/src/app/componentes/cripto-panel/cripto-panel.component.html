@@ -1,85 +1,49 @@
-<section
-  class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm space-y-4 mt-4"
->
-  <header class="space-y-1">
-    <h3 class="text-sm font-playfair text-slate-900 uppercase tracking-[0.18em]">
-      Mercado cripto
-    </h3>
-  </header>
+<div class="p-6 w-full max-w-4xl mx-auto">
 
-  <!-- BUSCADOR -->
-  <div class="relative">
-    <input
-      type="text"
-      placeholder="Buscar criptomoneda (ej. BTC, ETH)"
-      class="w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3 py-2 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-amber-500 focus:border-amber-500"
-    />
-    <span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-xs text-slate-400">
-      🔍
-    </span>
+  <h2 class="text-3xl font-bold tracking-wide mb-1 text-gray-900">
+    MERCADO CRYPTO
+  </h2>
+
+  <p class="text-gray-500 mb-6">
+    Datos en vivo desde tu backend (Spring Boot) con Binance
+  </p>
+
+  <p *ngIf="errorMsg" class="text-red-600 font-medium mb-4">
+    {{ errorMsg }}
+  </p>
+
+  <div class="overflow-x-auto shadow-md rounded-xl bg-white">
+    <table class="w-full text-left border border-gray-200">
+      <thead class="bg-gray-100 text-gray-700 uppercase text-sm">
+        <tr>
+          <th class="p-3">NOMBRE</th>
+          <th class="p-3">PRECIO</th>
+          <th class="p-3">CAMBIO 24H</th>
+        </tr>
+      </thead>
+
+      <tbody class="text-gray-900 text-sm">
+        <tr *ngFor="let c of cryptos" class="border-t border-gray-200">
+          <td class="p-3 font-bold">
+            {{ c.symbol }}
+          </td>
+
+          <td class="p-3 whitespace-nowrap">
+            {{ c.priceUsd | number:'1.2-2' }} USD
+          </td>
+
+          <td
+            class="p-3 font-semibold"
+            [ngClass]="{
+              'text-green-600': c.changePercent24Hr >= 0,
+              'text-red-600': c.changePercent24Hr < 0
+            }"
+          >
+            {{ c.changePercent24Hr | number:'1.2-2' }}%
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
-  <!-- LISTA CRIPTOS DEMO -->
-  <div class="space-y-2">
-    <div class="flex items-center justify-between text-xs sm:text-sm py-1.5">
-      <div>
-        <p class="font-medium text-slate-800">
-          BTC / EUR
-        </p>
-        <p class="text-[0.7rem] text-slate-400">
-          Bitcoin · Ejemplo estático
-        </p>
-      </div>
-      <div class="text-right">
-        <p class="font-semibold text-slate-900">
-          62.450,00 €
-        </p>
-        <p class="text-[0.7rem] text-emerald-600">
-          +1,2 % 24h
-        </p>
-      </div>
-    </div>
-
-    <div class="border-t border-slate-100"></div>
-
-    <div class="flex items-center justify-between text-xs sm:text-sm py-1.5">
-      <div>
-        <p class="font-medium text-slate-800">
-          ETH / EUR
-        </p>
-        <p class="text-[0.7rem] text-slate-400">
-          Ethereum · Ejemplo estático
-        </p>
-      </div>
-      <div class="text-right">
-        <p class="font-semibold text-slate-900">
-          3.150,00 €
-        </p>
-        <p class="text-[0.7rem] text-red-600">
-          -0,8 % 24h
-        </p>
-      </div>
-    </div>
-
-    <div class="border-t border-slate-100"></div>
-
-    <div class="flex items-center justify-between text-xs sm:text-sm py-1.5">
-      <div>
-        <p class="font-medium text-slate-800">
-          SOL / EUR
-        </p>
-        <p class="text-[0.7rem] text-slate-400">
-          Solana · Ejemplo estático
-        </p>
-      </div>
-      <div class="text-right">
-        <p class="font-semibold text-slate-900">
-          145,20 €
-        </p>
-        <p class="text-[0.7rem] text-emerald-600">
-          +3,4 % 24h
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+</div>
