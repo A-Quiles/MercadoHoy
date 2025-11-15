@@ -1,10 +1,16 @@
-package com.mercadohoy.mercadohoybackend.news.dto;
+package com.mercadohoy.mercadohoybackend.news.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 
-public class NewsDtos {
+@Document(collection = "noticias")
+public class Noticia {
 
+    @Id
     private String id;
+
     private String titulo;
     private String descripcion;
     private String fuente;
@@ -12,18 +18,7 @@ public class NewsDtos {
     private Boolean activo;
     private Date fecha;
 
-    public NewsDtos() {
-    }
-
-    public NewsDtos(String id, String titulo, String descripcion,
-                    String fuente, String categoria, Boolean activo, Date fecha) {
-        this.id = id;
-        this.titulo = titulo;
-        this.descripcion = descripcion;
-        this.fuente = fuente;
-        this.categoria = categoria;
-        this.activo = activo;
-        this.fecha = fecha;
+    public Noticia() {
     }
 
     public String getId() {

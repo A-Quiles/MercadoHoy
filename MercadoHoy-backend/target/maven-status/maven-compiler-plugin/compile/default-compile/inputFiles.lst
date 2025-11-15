@@ -4,6 +4,8 @@ C:\Users\aquilesd\MercadoHoy\MercadoHoy-backend\src\main\java\com\mercadohoy\mer
 C:\Users\aquilesd\MercadoHoy\MercadoHoy-backend\src\main\java\com\mercadohoy\mercadohoybackend\crypto\dto\CryptoAsset.java
 C:\Users\aquilesd\MercadoHoy\MercadoHoy-backend\src\main\java\com\mercadohoy\mercadohoybackend\config\WebConfig.java
 C:\Users\aquilesd\MercadoHoy\MercadoHoy-backend\src\main\java\com\mercadohoy\mercadohoybackend\crypto\dto\BinanceDtos.java
+C:\Users\aquilesd\MercadoHoy\MercadoHoy-backend\src\main\java\com\mercadohoy\mercadohoybackend\news\model\Noticia.java
 C:\Users\aquilesd\MercadoHoy\MercadoHoy-backend\src\main\java\com\mercadohoy\mercadohoybackend\crypto\service\CryptoService.java
 C:\Users\aquilesd\MercadoHoy\MercadoHoy-backend\src\main\java\com\mercadohoy\mercadohoybackend\MercadohoyBackendApplication.java
+C:\Users\aquilesd\MercadoHoy\MercadoHoy-backend\src\main\java\com\mercadohoy\mercadohoybackend\news\repository\NoticiaRepository.java
 C:\Users\aquilesd\MercadoHoy\MercadoHoy-backend\src\main\java\com\mercadohoy\mercadohoybackend\news\service\NewsService.java
